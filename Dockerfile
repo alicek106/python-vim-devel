@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 RUN apt update && \
-  apt install python3 python3-pip python3-dev vim wget locales -y && \
+  apt install python3 python3-pip python3-dev vim wget locales git -y && \
   apt clean autoclean && apt autoremove --yes && rm -rf /var/lib/{apt,dpkg,cache,log}
 
 RUN locale-gen ko_KR.UTF-8
